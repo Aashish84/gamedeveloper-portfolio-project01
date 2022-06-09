@@ -14,19 +14,10 @@ body {
 .wrapper {
   height: 100vh;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   width: 100vw;
 }
-.home-content {
-  scroll-snap-align: start;
-  height: 200vh;
-  padding-top: 70px;
-}
-.home-content h1 {
-  margin: 0px;
-}
-
 .fixed-nav {
   transition: 0.4s;
   padding: 10px;
@@ -35,4 +26,5 @@ body {
   top: 0px;
   left: 0;
   background-color: #000000aa;
+  z-index: 1;
 }
